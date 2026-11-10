@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shen 的主页</title>
+<style>
+  :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --text:#e6e8ee; --dim:#8b93a7; --accent:#4c8dff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:72px 24px 96px; }
+  h1 { font-size:34px; margin:0 0 8px; letter-spacing:-.5px; }
+  .sub { color:var(--dim); margin:0 0 44px; font-size:15px; }
+  .grid { display:grid; gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px;
+          padding:18px 20px; text-decoration:none; color:inherit; display:block;
+          transition:border-color .15s, transform .15s; }
+  .card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .card h3 { margin:0 0 6px; font-size:16px; }
+  .card p { margin:0; color:var(--dim); font-size:14px; }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+           color:var(--dim); font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+  a.link { color:var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>你好，我是 shen 👋</h1>
+  <p class="sub">这里是我的一个小角落，用 GitHub Pages 挂着，零成本。</p>
+
+  <div class="grid">
+    <a class="card" href="https://github.com/nealmarsh11-afk">
+      <h3>GitHub 主页</h3>
+      <p>我的代码仓库都在那边</p>
+    </a>
+    <a class="card" href="https://github.com/nealmarsh11-afk/hello-github">
+      <h3>hello-github</h3>
+      <p>学 Git 时建的第一个仓库（现在是私有的）</p>
+    </a>
+    <div class="card">
+      <h3>正在折腾</h3>
+      <p>Windows 自动化、DSH 插件、Git 版本管理</p>
+    </div>
+  </div>
+
+  <footer>
+    <span>由 GitHub Pages 托管 · 免费</span>
+    <span id="built">静态页面，没有后端</span>
+  </footer>
+</div>
+</body>
+</html>
